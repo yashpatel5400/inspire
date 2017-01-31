@@ -17,12 +17,12 @@ func main() {
     switch (pid) {
         // child fork
         case 0:
-        	binary, lookErr := exec.LookPath("./schedule")
+        	binary, lookErr := exec.LookPath("./regular")
 			if lookErr != nil {
 				panic(lookErr)
 			}
 			// fork new process and execute our program
-			execErr := syscall.Exec(binary, []string{}, os.Environ())
+			execErr := syscall.Exec(binary, []string{"./regular", "3"}, os.Environ())
 
 			// catch error if any
 			if execErr != nil {
@@ -41,7 +41,8 @@ func main() {
 	for {
 		fmt.Println(`Please select from the following:
 	(1) Quick
-	(2) Schedule`)
+	(2) Schedule
+	(3) Random`)
 
 		reader  := bufio.NewReader(os.Stdin)
 		mode, _ := reader.ReadString('\n')
