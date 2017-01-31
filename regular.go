@@ -6,6 +6,9 @@ import (
 	"strconv"
 )
 
+/*****************************************************************************/
+/* Produces a quick inspirational quote on time based on CMD-line args (secs)*/
+/*****************************************************************************/
 func main() {
 	strint := os.Args[1]
 	interval, err := strconv.Atoi(strint)
@@ -15,6 +18,6 @@ func main() {
 
 	for {
 		time.Sleep(time.Duration(interval) * time.Second)
-		quick(false)
+		quick(false, false)
 	}
 }

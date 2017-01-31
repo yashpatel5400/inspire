@@ -35,9 +35,10 @@ func readFile(filename string) ([]string) {
 }
 
 /*****************************************************************************/
-/* Produces a quote of inspiration. Returns a boolean if wanting to retry    */
+/* Produces a quote of inspiration. Returns a boolean if wanting to retry.   */
+/* Repeat bool is present to see whether a prompt to repeat is desired/not   */
 /*****************************************************************************/
-func quick(isFavorites bool) (bool) {
+func quick(isFavorites bool, repeat bool) (bool) {
 	var lines []string
 	if (isFavorites) {
 		lines = readFile("favorites.txt")
@@ -59,6 +60,10 @@ func quick(isFavorites bool) (bool) {
 	myInspiration := lines[rand.Intn(len(lines))]
 	printColor.Println(myInspiration)
 	
+	if !repeat {
+		return false
+	}
+
 	FAVORITE := "1\n"
 	RETRY    := "2\n"
 

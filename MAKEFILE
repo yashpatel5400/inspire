@@ -1,5 +1,8 @@
 inspire: inspire.go quick.go 
 	go build inspire.go quick.go
 
-schedule: schedule.go
-	go build schedule.go
+random: random.go quick.go
+	go build random.go quick.go
+
+regular: regular.go quick.go
+	go build regular.go quick.go
