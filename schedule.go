@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"bufio"
 	"os"
+	//"time"
 )
 
-func regular() {
+func regular(interval float32) {
 	return
 }
 
@@ -14,7 +15,7 @@ func random() {
 	return
 }
 
-func schedule() {
+func main() {
 	REGULAR := "1\n"
 	RANDOM  := "2\n"
 	RETURN  := "3\n"
@@ -28,7 +29,7 @@ func schedule() {
 
 	switch mode {
     case REGULAR:
-    	regular()
+    	regular(10.0)
 
     case RANDOM:
     	random()

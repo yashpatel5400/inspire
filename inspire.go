@@ -3,27 +3,45 @@ package main
 import (
 	"bufio"
 	"os"
-	// "os/exec"
+	"os/exec"
+	"syscall"
 	"fmt"
 )
 
 func main() {
 	QUICK	  := "1\n"
 	SCHEDULE  := "2\n"
-	CUSTOMIZE := "3\n"
 
+	pid,_,execErr := syscall.Syscall(syscall.SYS_FORK, 0, 0, 0)
+	if execErr != 0 { panic(execErr) }
+    switch (pid) {
+        // child fork
+        case 0:
+        	binary, lookErr := exec.LookPath("./schedule")
+			if lookErr != nil {
+				panic(lookErr)
+			}
+			// fork new process and execute our program
+			execErr := syscall.Exec(binary, []string{}, os.Environ())
+
+			// catch error if any
+			if execErr != nil {
+				panic(execErr)
+			}
+            return
+
+        // parent fork
+        default:
+            fmt.Println("PARENT")
+            return
+    }
+
+	// fork new process and execute our program
+	// execErr := syscall.Exec(binary, args, os.Environ())
 	for {
 		fmt.Println(`Please select from the following:
 	(1) Quick
-	(2) Schedule
-	(3) Customize`)
-
-		/* cmd := exec.Command("ls")
-		err := cmd.Start()
-		if err != nil {
-			fmt.Println("Failed to start!")
-			return
-		} */
+	(2) Schedule`)
 
 		reader  := bufio.NewReader(os.Stdin)
 		mode, _ := reader.ReadString('\n')
@@ -33,11 +51,8 @@ func main() {
 			if !quick(false) { return }
 
 		case SCHEDULE:
-			schedule()
 			return
 
-		case CUSTOMIZE:
-			quick(true)
 		}
 	}
 }

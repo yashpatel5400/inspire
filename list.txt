@@ -4,7 +4,6 @@
 "Every failure brings with it the seed of an equivalent success." --Napoleon Hill
 "Only those who dare to fail greatly can ever achieve greatly." --John F. Kennedy
 "It is hard to fail, but it is worse never to have tried to succeed." --Theodore Roosevelt
-Dreaming big.
 "Imagination is more important than knowledge." --Albert Einstein
 "Hold fast to dreams, for if dreams die, life is a broken winged bird that cannot fly." --Langston Hughes
 "The future belongs to those who believe in the beauty of their dreams." --Eleanor Roosevelt
@@ -18,7 +17,6 @@ Facing your fear.
 "Take time to deliberate; but when the time for action arrives, stop thinking and go in." --Andrew Jackson
 "The mind that is anxious about future events is miserable." --Seneca
 "Live in each season as it passes; breathe the air, drink the drink, taste the fruit, and resign yourself to the influences of each." --Henry David Thoreau
-
 "The art of leadership is saying no, not yes. It is very easy to say yes." --Tony Blair
 "A leader is a dealer in hope." --Napoleon Bonaparte
 "While a good leader sustains momentum, a great leader increases it." --John C. Maxwell
@@ -32,7 +30,6 @@ Making the journey.
 "Every artist was first an amateur." --Ralph Waldo Emerson
 "I was always looking outside myself for strength and confidence, but it comes from within. It is there all of the time." --Anna Freud
 "We can do anything we want to do if we stick to it long enough." --Helen Keller
-
 "Our business in life is not to get ahead of others, but to get ahead of ourselves." --E. Joseph Cossman
 "Insist on yourself. Never imitate." --Ralph Waldo Emerson
 "Who looks outside, dreams. Who looks inside, awakes." --Carl Jung
@@ -53,27 +50,23 @@ Seeking significance.
 "Life can be pulled by goals just as surely as it can be pushed by drives." --Viktor Frankl
 "The virtue lies in the struggle, not in the prize." --Richard Monckton Milnes
 "To reach a port, we must sail--sail, not tie at anchor--sail, not drift." --Franklin Roosevelt
-
 "Success is the child of audacity." --Benjamin Disraeli
 "The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack in will." --Vince Lombardi
 "The secret of success is to know something nobody else knows." --Aristotle Onassis
 "The surest way not to fail is to determine to succeed." --Richard Brinsley Sheridan
 "I cannot give you the formula for success, but I can give you the formula for failure--which is: Try to please everybody." --Herbert Bayard Swope
 "Careful thinking and hard work will solve nearly all your problems. Try and see for yourself." --Ullery
-Seeking wisdom.
 "Years teach us more than books." --Berthold Auerbach
 "The only medicine for suffering, crime, and all the other woes of mankind, is wisdom." --Thomas Huxley
 "The art of being wise is knowing what to overlook." --William James
 "The great lesson is that the sacred is in the ordinary, that it is to be found in one's daily life, in one's neighbors, friends and family, in one's backyard." --Abraham Maslow
 "A wise man learns by the mistakes of others, a fool by his own." --Latin proverb
 "No man was ever wise by chance." --Seneca
-
 "In everything the ends well defined are the secret of durable success." --Victor Cousins
 "Arriving at one goal is the starting point to another." --John Dewey
 "A goal is a dream with a deadline." --Napoleon Hill
 "Most 'impossible' goals can be met simply by breaking them down into bite-size chunks, writing them down, believing them, and then going full speed ahead as if they were routine." --Don Lancaster
 "Goals are the fuel in the furnace of achievement." --Brian Tracy
-
 "We are what we repeatedly do. Excellence, therefore, is not an act but a habit." --Aristotle
 "Take risks and you'll get the payoffs. Learn from your mistakes until you succeed. It's that simple." --Bobby Flay
 "The best way out is always through." --Robert Frost
