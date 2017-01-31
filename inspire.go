@@ -3,40 +3,41 @@ package main
 import (
 	"bufio"
 	"os"
+	// "os/exec"
 	"fmt"
 )
 
 func main() {
-	QUICK     := "1\n"
+	QUICK	  := "1\n"
 	SCHEDULE  := "2\n"
 	CUSTOMIZE := "3\n"
-	FAVORITES := "4\n"
-	ABOUT     := "5\n"
 
-	fmt.Println(`Please select from the following:
-(1) Quick
-(2) Schedule
-(3) Customize
-(4) Favorites
-(5) About`)
+	for {
+		fmt.Println(`Please select from the following:
+	(1) Quick
+	(2) Schedule
+	(3) Customize`)
 
-	reader  := bufio.NewReader(os.Stdin)
-	mode, _ := reader.ReadString('\n')
+		/* cmd := exec.Command("ls")
+		err := cmd.Start()
+		if err != nil {
+			fmt.Println("Failed to start!")
+			return
+		} */
 
-	switch mode {
-    case QUICK:
-    	quick()
+		reader  := bufio.NewReader(os.Stdin)
+		mode, _ := reader.ReadString('\n')
 
-    case SCHEDULE:
-    	quick()
+		switch mode {
+		case QUICK:
+			if !quick(false) { return }
 
-	case CUSTOMIZE:
-    	quick()
+		case SCHEDULE:
+			schedule()
+			return
 
-	case FAVORITES:
-    	quick()
-
-	case ABOUT:
-   		quick()
-    }
+		case CUSTOMIZE:
+			quick(true)
+		}
+	}
 }
