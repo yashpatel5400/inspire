@@ -4,11 +4,23 @@
 
 Feeling down? Want to feel like a boss? Want to feel on top of the world? And want to do it all from the command line??? Introducing Inspire: a command line tool that produces words of inspiration, written in Go Language!!
 
+## Instructions
+To use, simply clone the repo, run "make all", and then run the inspire file ("./inspire"). Note that, due to how the repo is set up, you must have the following settings:
+
+	- Running on an *nix system (not tested on anything other than 64-bit Ubuntu, but should work equally well)
+	- Downloaded and installed Go language
+	- Installed the following Go packages:
+		- "strings"
+		- "math/rand"
+		- "time"
+		- "color"
+
 ## Features
 When the application is run, you are presented with a quick menu for using the app:
 
 	- Quick
 	- Schedule
+
 Each of these are quite straightforward, but can be used for customizing your inspirational experience!
 
 ## Quick
