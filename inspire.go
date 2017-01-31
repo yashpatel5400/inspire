@@ -2,16 +2,16 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"os"
+	"fmt"
 )
 
 func main() {
-	QUICK     := "1"
-	SCHEDULE  := "2"
-	CUSTOMIZE := "3"
-	FAVORITES := "4"
-	ABOUT     := "5"
+	QUICK     := "1\n"
+	SCHEDULE  := "2\n"
+	CUSTOMIZE := "3\n"
+	FAVORITES := "4\n"
+	ABOUT     := "5\n"
 
 	fmt.Println(`Please select from the following:
 		(1) Quick
@@ -22,21 +22,21 @@ func main() {
 
 	reader  := bufio.NewReader(os.Stdin)
 	mode, _ := reader.ReadString('\n')
-	
+
 	switch mode {
-    	case QUICK:
-    		quick()
+    case QUICK:
+    	quick()
 
-    	case SCHEDULE:
-    		quick()
+    case SCHEDULE:
+    	quick()
 
-		case CUSTOMIZE:
-    		quick()
+	case CUSTOMIZE:
+    	quick()
 
-		case FAVORITES:
-    		quick()
+	case FAVORITES:
+    	quick()
 
-		case ABOUT:
-    		quick()
+	case ABOUT:
+   		quick()
     }
 }
