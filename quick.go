@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"math/rand"
 	"time"
+	"color"
 )
 
 func readFile(filename string) ([]string) {
@@ -20,14 +21,17 @@ func readFile(filename string) ([]string) {
 
 func quick() (bool) {
 	lines := readFile("list.txt")
-	numLines := len(lines)
-	
-	if numLines == 0 {
+	colors := [...]*color.Color{color.New(color.FgBlue), color.New(color.FgGreen),
+		color.New(color.FgYellow), color.New(color.FgMagenta),
+		color.New(color.FgCyan), color.New(color.FgWhite)}
+
+	if len(lines) == 0 {
 		return false
 	}
 
 	rand.Seed(time.Now().UnixNano())
-	myInspiration := lines[rand.Intn(numLines)]
-	fmt.Println(myInspiration)
+	printColor    := colors[rand.Intn(len(colors))].Add(color.Bold)
+	myInspiration := lines[rand.Intn(len(lines))]
+	printColor.Println(myInspiration)
 	return true
 }

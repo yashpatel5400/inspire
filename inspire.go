@@ -14,11 +14,11 @@ func main() {
 	ABOUT     := "5\n"
 
 	fmt.Println(`Please select from the following:
-		(1) Quick
-		(2) Schedule
-		(3) Customize
-		(4) Favorites
-		(5) About`)
+(1) Quick
+(2) Schedule
+(3) Customize
+(4) Favorites
+(5) About`)
 
 	reader  := bufio.NewReader(os.Stdin)
 	mode, _ := reader.ReadString('\n')
